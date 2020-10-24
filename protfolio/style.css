@@ -1,0 +1,376 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.con1 {
+    width: auto;
+    padding: 5px;
+}
+
+@media screen and (min-width: 680px) {
+    ul {
+        display: flex;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: blue;
+    }
+}
+
+ul li {
+    list-style: none;
+    line-height: 35px;
+    margin-left: 190px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+
+/* p {
+    font-size: large;
+    background-color: black;
+    color: white;
+    padding: 150px;
+}
+
+.pic {
+    margin-top: 50px;
+    width: 350px;
+    float: right;
+} */
+
+.land {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-top: 50px;
+    width: 1500px auto;
+    padding: 150px;
+    border-radius: 25px 25px;
+    background-color: black;
+}
+
+.par p {
+    font-size: 25px;
+    color: white;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.icon {
+    font-size: 25px;
+}
+
+.fa-lg {
+    color: blue;
+    width: 20px;
+    padding: 10px;
+}
+
+.fa-lg:hover {
+    color: wheat;
+}
+
+.fa-ins {
+    color: rgb(179, 71, 71);
+    width: 25px;
+    padding: 10px;
+}
+
+.fa-ins:hover {
+    color: white;
+}
+
+.fa-t {
+    color: rgb(122, 205, 238);
+    width: 25px;
+    padding: 10px;
+}
+
+.fa-t:hover {
+    color: wheat;
+}
+
+.fa-git {
+    width: 25px;
+    padding: 10px;
+    color: cornflowerblue;
+}
+
+.fa-git:hover {
+    color: white;
+}
+
+.fa-y {
+    color: red;
+    width: 25px;
+    padding: 10px;
+}
+
+.fa-y:hover {
+    color: white;
+}
+
+.fa-user {
+    color: white;
+}
+
+.fa-pass {
+    color: white;
+    margin-top: 3px;
+}
+
+.land button {
+    font-family: serif;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    border-radius: 30px 10px;
+    width: 100px;
+    padding: 10px;
+    color: blue;
+    margin-bottom: 20px;
+    margin-left: 750px;
+    background-color: white;
+    text-decoration: none;
+}
+
+.land button:hover {
+    color: red;
+}
+
+.land img {
+    margin-left: 80px;
+    width: 500px;
+    float: right;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 750px 750px;
+    cursor: pointer;
+}
+
+
+/* .grid-container {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item1 {
+    width: 50px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 8px 8px;
+    padding: 120px;
+}
+
+.grid-item2 {
+    width: 50px;
+    color: white;
+    background-color: black;
+    padding: 120px;
+}
+
+.grid-item3 {
+    width: 50px;
+    color: white;
+    background-color: black;
+    padding: 120px;
+} */
+
+.foot {
+    background-color: black;
+    width: 100%;
+    font-size: medium;
+    position: relative;
+}
+
+@media screen and (min-width: 680px) {
+    .foot h1 {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 50px;
+        padding-bottom: 10px;
+    }
+}
+
+.login {
+    width: 200px;
+    overflow: hidden;
+}
+
+.login label {
+    color: white;
+}
+
+.textbox {
+    overflow: hidden;
+    border-bottom: 1px solid green;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.login button {
+    margin-left: 80px;
+    margin-top: 40px;
+    border-radius: 20px 7px 20px 7px;
+    width: 70px;
+    padding: 5px;
+    color: white;
+    background-color: green;
+}
+
+.login button:hover {
+    color: black;
+}
+
+
+/* prograss bar */
+
+.con {
+    width: 500px;
+    margin: 50px auto 0;
+    padding: 20px;
+}
+
+.cons li {
+    position: relative;
+    list-style: none;
+    margin: 50px 0;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.cons li:before {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background-color: rgba(54, 126, 223, .5);
+    border-radius: 1000px;
+}
+
+.cons li:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgba(54, 126, 223, 1);
+    border-radius: 1000px;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.cons li.html:after {
+    animation-name: html;
+    background-color: red;
+}
+
+@keyframes html {
+    to {
+        width: 90%;
+    }
+}
+
+.cons li.css:after {
+    animation-name: css;
+    background-color: orange;
+}
+
+@keyframes css {
+    to {
+        width: 80%;
+    }
+}
+
+.cons li.js:after {
+    animation-name: js;
+    background-color: fuchsia;
+}
+
+@keyframes js {
+    to {
+        width: 65%;
+    }
+}
+
+.cons li.ng:after {
+    animation-name: ng;
+    background-color: blue;
+}
+
+@keyframes ng {
+    to {
+        width: 85%;
+    }
+}
+
+footer {
+    background: #000;
+    color: #fcfcfc;
+    font-family: "Roboto", sans-serif;
+    padding: 36px;
+}
+
+footer a {
+    color: #fcfcfc;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer .footer-container {
+    display: flex;
+    width: 900px;
+    margin: 0 auto;
+}
+
+footer ul {
+    list-style: none;
+    margin-top: 16px;
+    padding-left: 10px;
+}
+
+footer ul li {
+    margin: 12px 8px;
+}
+
+footer .footer-left {
+    padding-right: 100px;
+    border-right: 1px solid #c4c4c4;
+}
+
+footer .footer-right {
+    padding-left: 100px;
+}
+
+.fquick {
+    color: red;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+}
+
+.p {
+    margin-top: 10px;
+}
